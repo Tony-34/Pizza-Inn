@@ -11,6 +11,16 @@ body{
   padding: 0;
 }
 
-.hi{
+.h1{
   background-image: url(/images/pexels-pixabay-315755.jpg);
+} 
+#about-us .content{
+padding: 65px;
+width: 100%;
+background-color: burlywood;
+text-align: justify;
+overflow-x: hidden;
 }
+/* .order{
+  background-image: url();
+} */
