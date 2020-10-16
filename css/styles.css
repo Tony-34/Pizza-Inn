@@ -10,14 +10,7 @@ body{
   margin: 0;
   padding: 0;
 }
-#about-us{
-  /* background-image: url(../images/pexels-daria-shevtsova-1260968.jpg);
-  background-size: cover; */
-    background-repeat: no-repeat;
-    background-position: center;
-    text-align: center;
-    /* padding-top: 18px;
-    padding-bottom: 20px;
-    height: 420px; */
-    color: rgb(26, 18, 18);
+
+.hi{
+  background-image: url(/images/pexels-pixabay-315755.jpg);
 }
