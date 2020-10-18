@@ -2,27 +2,22 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width" initial-scale=1>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Pizza Inn</title>
-        
-  <!-- <link href="https://fonts.googleapis.com/css?family=Arima+Madurai|Cormorant|Eczar|El+Messiri|Itim|Sancreek|Wallpoet&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/mdb.min.css">
-  <link rel="stylesheet" href="css/bootstrap.css">
-  <link rel="stylesheet" href="css/wickedcss.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-  <link rel="stylesheet" href="css/styles.css">
-  <script src="https://code.jquery.com/jquery-3.3.1.min.js"
-        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-  <script src="js/scripts.js"></script>
-  <script src="js/jQuery.js"></script>
-        
-    </head>
+      </head>
+      <script src="https://use.fontawesome.com/releases/v5.12.1/js/all.js" crossorigin="anonymous"></script>
+      
+      <link rel="stylesheet" href="css/bootstrap.css">
+      <link rel="stylesheet" href="css/styles.css">
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+       <body>
+ 
+
              
                     <header>
                         <div class="view landing">
                             <div id="overlay">
-                                <nav class="navbar navbar-expand-sm bg-success navbar-dark fixed top">
+                                <nav class="navbar navbar-expand-lg bg-success navbar-dark fixed top">
                                   <a class="navbar-brand"  href="#">Pizza Inn</a>
                                   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
                                     <span class="navbar-toggler-icon"></span>
@@ -41,22 +36,21 @@
                                       </ul>
                                     </div>
                                 </nav>
+                                <div class="landing">
                                 <div class="mask rgba-black-light align-items-center">
                                     <div class="container" id="head">
-                                     <div class="row"> 
-                                     <div class="col-md-12 mb-4 white-text text-center text">
-                                       <img src="/images/pexels-pixabay-315755.jpg" alt="Pizza Inn" width="100%" height="70%">
-                                         <h1 class="h1-responsive gold-text text-uppercase font-weight-bold" mb-0 pt-5 pulse><strong>Pizza Inn</strong></h1>
-                                         <h1 class="text-uppercase mb-4 gold-text floater"><strong>Best pizza in Town!</strong></h1>
-                                         <!-- <a class="btn- btn-orange button floater" href="make-order"> Order Now!</a> -->
+                                     <div class="overlay"> 
+                                     <div class="first">
+                                       <!-- <img src="/images/pexels-pixabay-315755.jpg" alt="Pizza Inn" width="100%" height="70%"> -->
+                                         <h1><strong>Pizza Inn</strong></h1>
+                                         <h><strong>Best pizza in Town!</strong></h1>
+                                         
                                     </div>
                                 </div>
                             </div>
-                        </div> 
-                         <!-- <div class="mouse-click click">
-                             <a href="#variety"> <img src="/images/mouse_click.png" alt="mouse_click" id="mouse-click"></a></div>
-                            </div>
-                        </div> -->
+                        </div>
+                      </div>
+                         
                     </header>
                     <div class="controls-top text-center" id="about_us"> 
                         <h2>About Us</h2>
@@ -72,14 +66,15 @@
                             <div class="content">
                               <h3>Who We Are?</h3>
                               <p>Pizza Inn Restaurants that has been in pizza business for over 5years now and offers a very unique atmosphere for customers in 
-                                addition to home delivery services for all pizza orders and we know that pizza is a family meal 
-                                which popular around the world and that has resulted in a large number of chains of pizza 
-                                restaurants but non of them is the best than Pizza Inn.</p>
+                                addition to home delivery services for all pizza orders.</p>
+                                <p>We celebrate our annivasary providing over 300 snack buckets for evry one</p>
+                                <p>We really value our customers on the annivasary day the snacks doesnt cost you anything</p>
+                                <p>Every Tuesday and Friday we have offers.</p>
                             </div>
                           </div>
                         </div>
                     </div> 
-                    <div class="container carousel slide carousel-multi-item" data-ride="carousel" id="variety">
+                    <div class="container carousel slide carousel-" data-ride="carousel" id="variety">
                       <div class="controls-top "> 
                          <h2>Our Varieties</h2>
                          </div>
@@ -143,11 +138,12 @@
                        
                       <div class="container-fluid order" id="make-order">
                        <div class="order-overlay">
-                         <div class="control-top text-center" id="order-now">
+                         <div class="control-top text-center" id="Order-now">
                            <h2>Order Here</h2>
                       </div>
                       <h2>Order a delicious pizza and we will deliver at your door step!</h2>
                       <div class="row">
+                        <div class="col-sm-5">
                         <form action="">
                           <label for="Select">Select Your Flavour</label>
                         <select class="browser-default custom-select custom-select-md mb-3 name">
@@ -163,7 +159,7 @@
                         <select class="browser-default custom-select custom-select-md mb-3" id="size">
                           <option selected value="0">Select size here</option>
                           <option value="large">Large -- sh. 1200</option>
-                          <option value="medium">Medium --sh. 800</option>
+                          <option value="medium">Medium --sh. 850</option>
                           <option value="small">Small -- sh. 600</option>
                         </select>
                         <label for="crust">Choose your favorite Crust!</label>
@@ -186,15 +182,14 @@
                           <label class="custom-control-label" for="Milkshake">Milkshake</label>
                         </div>
                         <br><br>
-                      <button type="submit" class="btn btn-orange proceed">Proceed</button>
+                      <button type="submit" class="btn btn-danger proceed">Proceed</button>
+
                     </form>
                     </div>
-                  </div>
                   <div class="col-sm-7">
                     <div id="information">
                       <p>Your order will be processed and delivered within one hour of placing.</p>
-                      <p>Make sure you have the total amout for the order during order delivery delivery.</p>
-                      <p>Incase of any comment of complaint, Please reach out to us as fast as possible.</p>
+                      <p>karibu tena </p>
                       <p id="regards">Regards, Management</p>
                     </div>
                     <div class="choise">
@@ -241,14 +236,16 @@
                     </div>
                   </div>
                 </div>
+              </div>
+            </div>
                 
-                    
-                <div class="container-fluid bg-default" id="contact">
+                <footer>   
+                <div class="container" id="contact">
                   <div class="controls-top "> 
                       <h2>Contact Us</h2>
                     </div>
                   <div class="row" id="contactdetails">
-                    <div class="col-md-1">
+                    <div class="col-md-3 col-sm-12">
                        
                     </div>
                     <div class="col-md-3 text-justify">
@@ -264,5 +261,12 @@
                     </div>
                   </div>
                 </div>
-    </body>
+              </footer>
+
+              <script src="./js/jquery-3.5.1.js"></script>
+              <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+              <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script> 
+              <script src="./js/scripts.js"></script>
+
+            </body>
 </html>
