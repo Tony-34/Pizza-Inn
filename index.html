@@ -5,13 +5,18 @@
         <meta name="viewport" content="width=device-width" initial-scale=1>
         <title>Pizza Inn</title>
         
-  <link href="https://fonts.googleapis.com/css?family=Arima+Madurai|Cormorant|Eczar|El+Messiri|Itim|Sancreek|Wallpoet&display=swap" rel="stylesheet">
+  <!-- <link href="https://fonts.googleapis.com/css?family=Arima+Madurai|Cormorant|Eczar|El+Messiri|Itim|Sancreek|Wallpoet&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/mdb.min.css">
   <link rel="stylesheet" href="css/bootstrap.css">
   <link rel="stylesheet" href="css/wickedcss.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
   <link rel="stylesheet" href="css/styles.css">
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script src="js/scripts.js"></script>
+  <script src="js/jQuery.js"></script>
+        
     </head>
              
                     <header>
@@ -43,7 +48,7 @@
                                        <img src="/images/pexels-pixabay-315755.jpg" alt="Pizza Inn" width="100%" height="70%">
                                          <h1 class="h1-responsive gold-text text-uppercase font-weight-bold" mb-0 pt-5 pulse><strong>Pizza Inn</strong></h1>
                                          <h1 class="text-uppercase mb-4 gold-text floater"><strong>Best pizza in Town!</strong></h1>
-                                         <a class="btn- btn-orange button floater" href="make-order"> Order Now!</a>
+                                         <!-- <a class="btn- btn-orange button floater" href="make-order"> Order Now!</a> -->
                                     </div>
                                 </div>
                             </div>
@@ -65,7 +70,7 @@
                           </div>
                           <div class="col-sm-5 align-items-center">
                             <div class="content">
-                              <h3>Who Are We?</h3>
+                              <h3>Who We Are?</h3>
                               <p>Pizza Inn Restaurants that has been in pizza business for over 5years now and offers a very unique atmosphere for customers in 
                                 addition to home delivery services for all pizza orders and we know that pizza is a family meal 
                                 which popular around the world and that has resulted in a large number of chains of pizza 
@@ -134,6 +139,7 @@
                           </div>
                         </div>
                       </div>
+                  
                        
                       <div class="container-fluid order" id="make-order">
                        <div class="order-overlay">
@@ -166,15 +172,63 @@
                           <option value="stuffed">Stuffed -- sh.150</option>
                           <option value="Gluten-free">Gluten-free -- sh.100</option>
                         </select>
-                        <label for="Toppings">Choose your Toppings!</label>
-                        <select class="browser-default custom-select custom-select-md mb-3" id="Toppings">
-                        <option value="soda">soda -- sh.50</option>
-                        <option value="milk shake">Milk Shake -- sh.150</option>
-                        <option value="Mushroom">Mushroom -- sh.200</option>
-                      </select>
+                        <label for="Toppings">Choose your Toppings at sh.50 each</label><br>
+                        <div class="custom-control custom-checkbox custom-control-inline">
+                          <input type="checkbox" class="custom-control-input" id="Sausage" value="Sausage" name="toppings">
+                          <label class="custom-control-label" for="Sausage">Sausage</label>
+                        </div>
+                        <div class="custom-control custom-checkbox custom-control-inline">
+                          <input type="checkbox" class="custom-control-input" id="Bacon" value="Bacon" name="toppings">
+                          <label class="custom-control-label" for="Bacon">Bacon</label>
+                        </div>
+                        <div class="custom-control custom-checkbox custom-control-inline">
+                          <input type="checkbox" class="custom-control-input" id="Mushrooms" value="Mushrooms" name="toppings">
+                          <label class="custom-control-label" for="Milkshake">Milkshake</label>
+                        </div>
+                        <br><br>
+                      <button type="submit" class="btn btn-orange proceed">Proceed</button>
                     </form>
                     </div>
-
+                  </div>
+                  <div class="col-sm-7">
+                    <div id="information">
+                      <p>Your order will be processed and delivered within one hour of placing.</p>
+                      <p>Make sure you have the total amout for the order during order delivery delivery.</p>
+                      <p>Incase of any comment of complaint, Please reach out to us as fast as possible.</p>
+                      <p id="regards">Regards, Management</p>
+                    </div>
+                    <div class="choise">
+                      <h2>Your Order is:</h2>
+                      <div id="your-orders">
+                        <table class="table table-sm  pizzatable">
+                          <thead>
+                            <tr>
+                              <th scope="col">Name</th>
+                              <th scope="col">Size</th>
+                              <th scope="col">Crust</th>
+                              <th scope="col">Topping</th>
+                              <th scope="col">Total</th>
+                            </tr>
+                          </thead>
+                          <tbody id="ordersmade">
+                            <tr>
+                              <td id="pizzaname"></td>
+                              <td id="pizzasize"></td>
+                              <td id="pizzacrust"></td>
+                              <td id="pizzatopping"></td>
+                              <td id="totals"></td>
+                            </tr>                  
+                          </tbody>
+                        </table>
+                        <p id="pizzatotal"></p>
+                        <p id="totalbill"></p> 
+                        <p id="addedprice">Delivery will cost sh. 150</p>
+                        <p id="finallmessage"></p>
+                      </div>
+                      <button class="btn btn-orange addPizza">Add Pizza</button>
+                      <button class="btn btn-orange" id="checkout">Checkout</button>
+                      <button class="btn btn-orange deliver">Home delivery?</button>
+                    </div>
                     <div class="delivery">
                       <form action="">
                         <div class="form-group">
@@ -208,5 +262,7 @@
                        <p>tr33947@gmail.com</p> 
                        <p>Phone: +254757758510</p>
                     </div>
+                  </div>
+                </div>
     </body>
 </html>

@@ -29,5 +29,16 @@ overflow-x: hidden;
   padding-left: 6%;
 }
 .choice{
-  
+  display: none;
+  padding-left: 2%;
+  padding-right: 2%;
+}
+@media only screen and (max-width: 485px){
+  .flex-xs-column {
+    flex-direction: column;
+  }
+}
+@media only screen and (max-width: 767px){
+  .section {
+    padding-top: 30px;
 }
