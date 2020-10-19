@@ -250,7 +250,7 @@ $(document).ready(function(){
         crust_price = 200;
       break;
       case "Stuffed":
-        crust_price = 250;
+        crust_price = 150;
       break;
       case "Gluten-free":
         crust_price = 180;
@@ -392,15 +392,5 @@ $(document).ready(function(){
   });
 }); 
 
-
-// Pizza.prototype.getToppingPrice = function (){
-//   if(this.ordersmade === "large"){
-//     if(this.topping === "sausage")
-//     return 50;
-//   }elseif(this.topping === "Becon"){
-//     return 50;
-//   }else{
-//     return 100;
-//   }
 
 
