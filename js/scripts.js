@@ -366,7 +366,7 @@ $(document).ready(function(){
 
     $("button#final-order").click(function(event){
       event.preventDefault();
-
+       
       $("#pizzatotal").hide();
       $(".pick-up").hide();
       $("button#final-order").hide();
@@ -375,7 +375,7 @@ $(document).ready(function(){
       let person = $("input#name").val();
       let phone = $("input#phone").val();
       let location = $("input#location").val();
-
+      console.log(person)
       if ($("input#name").val() && $("input#phone").val() && $("input#location").val()!=""){
 
         $("#finallmessage").append(person+", We have recieved your order and it will be delivered to you at "+location+ ". Prepare sh. "+deliceryamount);
@@ -391,3 +391,16 @@ $(document).ready(function(){
    event.preventDefault();
   });
 }); 
+
+
+// Pizza.prototype.getToppingPrice = function (){
+//   if(this.ordersmade === "large"){
+//     if(this.topping === "sausage")
+//     return 50;
+//   }elseif(this.topping === "Becon"){
+//     return 50;
+//   }else{
+//     return 100;
+//   }
+
+
