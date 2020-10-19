@@ -3,7 +3,7 @@
 ####  Author Tony Abong'O
 
 ## Description
--This is a website that shows how a Pizza website would look like and its usage.
+-This is a website for Pizza ,it shows in details how the services are offered and different Pizza sold,also allows a customer to order online and it will be delivered to their place after providing the location.
 
 ## setup/ Installation
 To run the application in your terminal:
