@@ -1,6 +1,6 @@
 html,body,header,
 .landing {
-  background-image: url(/images/pexels-pixabay-315755.jpg);
+  background-image: url(../images/pexels-pixabay-315755.jpg);
   overflow-x: hidden;
   height: 100%;
   scroll-behavior: smooth;
@@ -35,7 +35,7 @@ text-align: justify;
 overflow-x: hidden;
 }
 .order{
-  background-image: url(/images/pexels-kristina-paukshtite-1146760.jpg);
+  background-image: url(../images/pexels-kristina-paukshtite-1146760.jpg);
   margin-left: 2%;
   margin-right: 2%;
   padding-bottom: 40px;
