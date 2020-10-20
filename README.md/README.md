@@ -7,7 +7,7 @@
 
 ## setup/ Installation
 To run the application in your terminal:
- Clone Repository on Local Machine (live link to project)  
+ Clone Repository on Local Machine (https://github.com/Tony-34/Pizza-Inn.git)  
 - cd into Directory  cd Pizza INN
 - code .or atom.
 
