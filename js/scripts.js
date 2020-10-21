@@ -370,7 +370,7 @@ $(document).ready(function(){
       $("#pizzatotal").hide();
       $(".pick-up").hide();
       $("button#final-order").hide();
-      let deliceryamount= checkoutTotal+150;
+      let deliveryamount= checkoutTotal+150;
       console.log("Final Bill is: "+deliceryamount);
       let person = $("input#name").val();
       let phone = $("input#phone").val();
